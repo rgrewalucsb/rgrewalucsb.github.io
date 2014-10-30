@@ -1,6 +1,6 @@
-Randy's Blog
+DBC Phase 0 Blogs
 
-What is GitHub and Why to Use it?
+GitBlog
 
 October 29, 2014
 
