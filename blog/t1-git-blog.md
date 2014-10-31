@@ -1,6 +1,6 @@
-DBC Phase 0 Blogs
+#DBC Phase 0 Blogs
 
-GitBlog
+##GitBlog
 
 October 29, 2014
 
