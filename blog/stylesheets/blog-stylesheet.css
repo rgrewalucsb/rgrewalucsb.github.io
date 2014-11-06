@@ -1,0 +1,33 @@
+table {
+	border: 2px solid red;
+	border-radius: 5px;
+	background-color:black; 
+}
+table tr td a {
+	text-decoration: none;
+	color:white;
+	font-weight: bold;	
+}
+table td {
+	border-right: 2px solid white;
+}
+#noborder {
+	border-right:none;
+}
+#headerimg {
+	width:100%;
+	height:auto;
+}
+#profile {
+	margin:-100px 0px 0px 50px;
+}
+
+}
+body div {
+	height:auto;
+	width: 75%;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #308014;
+	float: left;
+}
