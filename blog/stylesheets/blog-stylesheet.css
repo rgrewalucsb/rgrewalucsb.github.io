@@ -1,15 +1,25 @@
+html {
+	background-color: #264478;
+}
+* {
+	font-family: Tahoma;
+}
 table {
-	border: 2px solid red;
+	border: 2px solid #D53100;
 	border-radius: 5px;
-	background-color:black; 
+	background-color:#5C5064; 
 }
 table tr td a {
 	text-decoration: none;
-	color:white;
+	color:black;
 	font-weight: bold;	
 }
-table td {
-	border-right: 2px solid white;
+table tr td a:hover{
+	text-decoration:underline;
+	color:#D53100;
+}
+table td { 
+	border-right: 2px solid #D53100;
 }
 #noborder {
 	border-right:none;
@@ -20,14 +30,55 @@ table td {
 }
 #profile {
 	margin:-100px 0px 0px 50px;
+	width:15%;
+	height:auto;
 }
 
-}
-body div {
-	height:auto;
+
+#one {
+	display:block;
+	float:left;
 	width: 75%;
-	border: 2px solid black;
+	border: 2px solid #D53100;
+	background-color:#5C5064;
+	color:black;
 	border-radius: 5px;
-	background-color: #308014;
-	float: left;
+	padding: 5px 10px 5px 10px;
+}
+
+#two {
+	display:block;
+	float:left;
+	width: 75%;
+	border: 2px solid #D53100;
+	background-color:#5C5064;
+	color:black;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+}
+#three {
+	margin-right: 10px;
+	position: fixed;
+  	bottom: 0;
+  	right: 0;
+	width: 20%;
+	border: 2px solid #D53100;
+	background-color:#5C5064;
+	color:black;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+}
+
+#share {
+	float:right;
+}
+ul li a {
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+
+ul li a:hover{
+	text-decoration:underline;
+	color:#D53100;	
 }
