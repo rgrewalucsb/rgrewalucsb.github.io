@@ -20,8 +20,8 @@ table tr td {
 table tr td a {
 	text-decoration: none;
 	color: #00225C;
-	font-weight: bold;	
-	font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;	
 }
 table tr td a:hover{
 	text-decoration:underline;
@@ -71,63 +71,63 @@ table td {
 	margin-right: auto;
 	margin-left: auto;
 }
-#body {
-	display:block;
-}
-
-#one {
-	display:block;
-	margin-right: auto;
+#homepage {
+	border:3px solid white;
+	display: block;
+	border-radius: 5px;
 	margin-left: auto;
-	width: 60%;
-	border: 2px solid #FFFFFF;
-	background-color: #b0b0b0;
-	color: #00225c;
-	border-radius: 5px;
+	margin-right:auto;
+	width:60%;
+	background-color: white;
+	padding: 10px 10px 10px 10px;
+}
+#Randy {
+	display: inline-block; 
+	width:54%;
+	vertical-align: middle;
 	padding: 5px 10px 5px 10px;
 }
-
-#two {
-	display:block;
-	margin-right: auto;
+#picture {
+	display: inline-block;
+	text-align: right;
+}
+#pic {
+	height:450px;
+	vertical-align: middle;
+}
+.logo {
+	height:25px;
+	width:auto;
 	margin-left: auto;
-	width: 60%;
-	border: 2px solid white;
-	background-color: #b0b0b0;
-	color: #00225c;
-	border-radius: 5px;
-	padding: 5px 10px 5px 10px;
+	margin-right:auto;
 }
-#three {
-	margin-right: 10px;
-	position: fixed;
-  	bottom: 0;
-  	right: 0;
-	width: 15%;
-	border: 2px solid white;
-	background-color: #b0b0b0;
-	color: #00225c;
-	border-radius: 5px;
-	padding: 5px 10px 5px 10px;
+#weblink {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display block;
+	color: #00225C;
+	font-size: 18px;
+	line-height: 2;
+	font-family:Yanone Kaffeesatz,serif;
 }
-
-#share {
-	float:right;
-}
-ul li a {
+#weblink a{
+	font-family:Yanone Kaffeesatz,serif;
+	color: #00225C;
 	text-decoration: none;
-	color: #00225c;
-	font-weight: bold;
-	font-size: 18px;
 }
-
-ul li a:hover{
+#weblink a:hover{
 	text-decoration:underline;
-	color: #678ef5;	
-}
-body p {
+	color: #678EF5;
 	font-size: 18px;
 }
-h3{
-	font-size: 20px;
+#weblink a:visited{
+	font-size: 18px;
+}
+#h1 {
+	font-family: Rock Salt, serif;
+	text-align: center;
+}
+#snip {
+	font-family: Lobster,sans;
 }
