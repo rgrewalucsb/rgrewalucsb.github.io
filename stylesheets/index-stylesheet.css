@@ -92,7 +92,7 @@ table td {
 	text-align: right;
 }
 #pic {
-	height:450px;
+	height:460px;
 	vertical-align: middle;
 }
 .logo {
@@ -108,7 +108,7 @@ table td {
 	display block;
 	color: #00225C;
 	font-size: 18px;
-	line-height: 2;
+	line-height: 1.5;
 	font-family:Yanone Kaffeesatz,serif;
 }
 #weblink a{
@@ -127,7 +127,10 @@ table td {
 #h1 {
 	font-family: Rock Salt, serif;
 	text-align: center;
+	font-size: 38px;
+	color: #00225C;
 }
 #snip {
 	font-family: Lobster,sans;
+	font-size: 14px;
 }
