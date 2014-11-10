@@ -143,9 +143,11 @@ table td {
 	height: 20px;
 	border-radius: 5px;
 	border: 5px solid white;
-	background-color: #b0b0b0;
+	background-color: white;
 	text-align: center;
 	margin-top: 5px;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 5px 5px 5px 5px;
+	font-weight: bold;
 }
