@@ -98,6 +98,17 @@ table td {
 	border-radius: 5px;
 	padding: 5px 10px 5px 10px;
 }
+.three {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 60%;
+	border: 2px solid white;
+	background-color: #b0b0b0;
+	color: #00225c;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+}
 #three {
 	margin-right: 10px;
 	position: fixed;
