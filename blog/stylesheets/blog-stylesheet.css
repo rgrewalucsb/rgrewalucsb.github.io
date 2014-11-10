@@ -90,6 +90,7 @@ table td {
 
 #two {
 	display:block;
+	margin-top: 5px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 60%;
