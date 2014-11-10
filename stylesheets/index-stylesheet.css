@@ -9,7 +9,7 @@ table {
 	border: 3px solid white;
 	border-radius: 5px;
 	background-color: #B0B0B0; 
-	width:90%;
+	width:75%;
 	margin-right: auto;
 	margin-left:auto;
 	text-align: center;
@@ -36,12 +36,13 @@ table td {
 }
 #bar {
 	padding:10px 10px 10px 10px;
-	width:60%;
+	width:80%;
 	height:auto;
 	vertical-align: middle;
 	position:static;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
 }
 #headering {
 	border:3px solid white;
