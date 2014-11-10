@@ -138,3 +138,11 @@ table td {
 	font-family: Lobster,sans;
 	font-size: 14px;
 }
+#copyright {
+	width: 60%;
+	height: 20px;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
