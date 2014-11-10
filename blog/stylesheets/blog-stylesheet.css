@@ -113,9 +113,9 @@ table td {
 #three {
 	margin-right: 10px;
 	position: fixed;
-  	bottom: 5px;
+  	bottom: 10px;
   	right: 0;
-	width: 15%;
+	width: 10%;
 	border: 2px solid white;
 	background-color: #b0b0b0;
 	color: #00225c;
