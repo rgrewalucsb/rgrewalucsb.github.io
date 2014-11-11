@@ -111,7 +111,7 @@ table td {
 	text-align: center;
 	display block;
 	color: #00225C;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
 	font-family:Yanone Kaffeesatz,serif;
 }
@@ -123,11 +123,11 @@ table td {
 #weblink a:hover{
 	text-decoration:underline;
 	color: #678EF5;
-	font-size: 18px;
+	font-size: 16px;
 	box-shadow: 0 0 25px #678EF5;
 }
 #weblink a:visited{
-	font-size: 18px;
+	font-size: 16px;
 }
 #h1 {
 	font-family: Rock Salt, serif;
@@ -136,7 +136,7 @@ table td {
 	color: #00225C;
 }
 #snip {
-	font-size: 14px;
+	font-size: 16px;
 }
 #copyright {
 	width: 61%;
