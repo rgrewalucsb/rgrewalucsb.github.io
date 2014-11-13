@@ -147,9 +147,11 @@ body p {
 h3{
 	font-family: Rock Salt, serif;
 	font-size: 26px;
+	text-align: center;
 }
 h4{
 	font-size: 16px;
+	text-align: center;
 }
 #copyright {
 	width: 61%;
