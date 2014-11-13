@@ -90,7 +90,7 @@ table td {
 	text-align: center;
 	display block;
 	color: #00225C;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.5;
 	font-family:Yanone Kaffeesatz,serif;
 }
@@ -102,10 +102,10 @@ table td {
 #weblink a:hover{
 	text-decoration:underline;
 	color: #678EF5;
-	font-size: 16px;
+	font-size: 20px;
 }
 #weblink a:visited{
-	font-size: 16px;
+	font-size: 20px;
 }
 #h1 {
 	font-family: Rock Salt, serif;
@@ -114,7 +114,7 @@ table td {
 	color: #00225C;
 }
 .logo {
-	height:100px;
+	height:300px;
 	width:auto;
 	margin-left: auto;
 	margin-right:auto;
