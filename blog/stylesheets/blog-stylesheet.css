@@ -101,7 +101,7 @@ table td {
 	border-radius: 5px;
 	padding: 5px 10px 5px 10px;
 }
-.logo {
+img {
 	width:400px;
 	height:auto;
 	margin-left: auto;
@@ -139,6 +139,10 @@ body p {
 }
 h3{
 	font-size: 20px;
+	text-align: center;
+}
+h4{
+	text-align: center;
 }
 #copyright {
 	width: 61%;
