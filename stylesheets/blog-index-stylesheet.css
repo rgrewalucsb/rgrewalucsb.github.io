@@ -136,4 +136,6 @@ table td {
 	margin-left: auto;
 	font-family: open sans, sans;
 	font-size: 12px;
+	max-width: 825px;
+	min-width: 800px;
 }
