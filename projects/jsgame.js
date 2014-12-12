@@ -4,14 +4,44 @@ var ctx = canvas.getContext('2d');
 canvas.width = 450;
 canvas.height = 450;
  
-var mySprite = {
-    x: 200,
-    y: 200,
-    width: 50,
-    height: 50,
-    speed: 200,
-    color: '#c00'
-};
+var santaimage = new Image();
+santaimage.src = "../imgs/Santa.png";
+
+function sprite (options) {
+				
+    var that = {};
+					
+    that.context = options.context;
+    that.width = options.width;
+    that.height = options.height;
+    that.image = options.image;
+
+    return that;
+
+    that.render = function () {
+
+        // Draw the animation
+        that.context.drawImage(
+           that.image,
+           0,
+           0,
+           that.width,
+           that.height,
+           0,
+           0,
+           that.width,
+           that.height);
+    };
+}
+
+var santa = sprite({
+    context: canvas.getContext("2d"),
+    width: 100,
+    height: 100,
+    image: santaimage
+});
+
+santa.render();
  
 var keysDown = {};
 window.addEventListener('keydown', function(e) {
