@@ -1,0 +1,141 @@
+html {
+	background-color: #5E5E5E;
+}
+* {
+	font-family: Yanone Kaffeesatz,Tahoma;
+}
+
+table {
+	border: 3px solid white;
+	border-radius: 5px;
+	background-color: #B0B0B0; 
+	width:100%;
+	margin-right: auto;
+	margin-left:auto;
+	text-align: center;
+
+}
+table tr td {
+	width:60px;
+}
+table tr td a {
+	text-decoration: none;
+	color: #00225C;
+	font-weight: bold;
+	font-size: 20px;	
+}
+table tr td a:hover{
+	text-decoration:underline;
+	color: #678EF5;
+}
+table td { 
+	padding:5px 5px 5px 5px;
+	border-right: 2px solid #FFFFFF;
+}
+#noborder {
+	border-right:none;
+}
+#bar {
+	padding:10px 10px 10px 10px;
+	width:80%;
+	height:auto;
+	vertical-align: middle;
+	position:static;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	max-width: 825px;
+	min-width: 800px;
+}
+#headering {
+	border:3px solid white;
+	border-radius: 5px;
+	width:auto;
+	height:103.5px;
+	}
+#prof {
+	width:auto;
+	height:103.5px;
+	border:3px solid white;
+	border-radius: 5px;
+}
+#profile {
+	display:inline-block;
+	margin-right:auto;
+	margin-left:auto;
+	vertical-align: middle;
+}
+#head {
+	display:inline-block;
+	vertical-align: middle;
+	top:0;
+	right:0;
+}
+#table {
+	margin-right: auto;
+	margin-left: auto;
+}
+#homepage {
+	border:3px solid white;
+	display: block;
+	border-radius: 5px;
+	margin-top: -5px;
+	margin-left: auto;
+	margin-right:auto;
+	width:60%;
+	background-color: white;
+	padding: 10px 10px 10px 10px;
+	max-width: 825px;
+	min-width: 800px;
+}
+
+#weblink {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display block;
+	color: #00225C;
+	font-size: 24px;
+	line-height: 2;
+	font-family:Yanone Kaffeesatz,serif;
+}
+#weblink a{
+	font-family:Yanone Kaffeesatz,serif;
+	color: #00225C;
+	text-decoration: none;
+}
+#weblink a:hover{
+	text-decoration:underline;
+	color: #678EF5;
+	font-size: 24px;
+}
+#weblink a:visited{
+	font-size: 24px;
+}
+#h1 {
+	font-family: Rock Salt, serif;
+	text-align: center;
+	font-size: 38px;
+	color: #00225C;
+}
+.logo {
+	width:400px;
+	height:auto;
+	margin-left: auto;
+	margin-right:auto;
+}
+#copyright {
+	width: 61%;
+	height: 15px;
+	border-radius: 5px;
+	border: 5px solid #b0b0b0;
+	background-color: #b0b0b0;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: open sans, sans;
+	font-size: 12px;
+	max-width: 825px;
+	min-width: 800px;
+}
