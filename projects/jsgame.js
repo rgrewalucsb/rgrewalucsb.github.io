@@ -1,8 +1,8 @@
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
  
-canvas.width = 800;
-canvas.height = 600;
+canvas.width = 512;
+canvas.height = 512;
  
 var mySprite = {
     x: 200,
