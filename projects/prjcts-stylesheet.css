@@ -140,3 +140,9 @@ table td {
 	max-width: 825px;
 	min-width: 800px;
 }
+#santa {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+}
