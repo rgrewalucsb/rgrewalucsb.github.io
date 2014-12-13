@@ -6,21 +6,21 @@ canvas.height = 450;
 var santa = document.getElementById("santa");
 
 var santa = {
-	speed: 100,
 	x: 200,
-	y: 200,
-	 width: 50,
-    height: 50
-};
-
-var mySprite = {
-    x: 200,
     y: 200,
     width: 50,
     height: 50,
     speed: 200,
-    color: '#c00'
 };
+
+// var mySprite = {
+//     x: 200,
+//     y: 200,
+//     width: 50,
+//     height: 50,
+//     speed: 200,
+//     color: '#c00'
+// };
  
 var keysDown = {};
 window.addEventListener('keydown', function(e) {
@@ -30,8 +30,8 @@ window.addEventListener('keyup', function(e) {
     delete keysDown[e.keyCode];
 });
  
-function move(e) {
-    if (e.keyCode == 37) {
+function move(mod) {
+    if (37 in keysDown) {
         santa.x -= santa.speed * mod;
     }
     if (38 in keysDown) {
@@ -53,7 +53,7 @@ function render() {
 }
  
 function run() {
-    update((Date.now() - time) / 1000);
+    move((Date.now() - time) / 1000);
     render();
     time = Date.now();
 }
