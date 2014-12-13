@@ -22,13 +22,13 @@ var santa = {
 //     color: '#c00'
 // };
  
-// var keysDown = {};
-// window.addEventListener('keydown', function(e) {
-//     keysDown[e.keyCode] = true;
-// });
-// window.addEventListener('keyup', function(e) {
-//     delete keysDown[e.keyCode];
-// });
+var keysDown = {};
+window.addEventListener('keydown', function(e) {
+    keysDown[e.keyCode] = true;
+});
+window.addEventListener('keyup', function(e) {
+    delete keysDown[e.keyCode];
+});
  
 function move(mod) {
     if (37 in keysDown) {
