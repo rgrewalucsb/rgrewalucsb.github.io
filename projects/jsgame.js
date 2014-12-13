@@ -40,8 +40,8 @@ function update(mod) {
 function render() {
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = mySprite.color;
-    ctx.fillRect(mySprite.x, mySprite.y, mySprite.width, mySprite.height);
+    ctx.fillStyle = santa.color;
+    ctx.fillRect(santa.x, santa.y, santa.width, santa.height);
 }
  
 function run() {
