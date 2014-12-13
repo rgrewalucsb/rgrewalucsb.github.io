@@ -194,72 +194,72 @@
 		<div id="homepage">
 			<h1 id="h1">Santa's Helper</h1>
 			<p id="intro"> Santa has dropped 10 presents that were going to some kids in need! He is getting old so he can't seem to find them buried in the snow! Help him retrieve all 10 presents with your arrow keys!
-		<div id="backdrop">
-			<img id="santa" src="http://rgrewalucsb.github.io/imgs/Santa.png"/>
-			<img id="present" src="http://rgrewalucsb.github.io/imgs/present.png"/>
-			<div id="counter"></div>
-		</div>	
+			<div id="backdrop">
+				<img id="santa" src="http://rgrewalucsb.github.io/imgs/Santa.png"/>
+				<img id="present" src="http://rgrewalucsb.github.io/imgs/present.png"/>
+				<div id="counter"></div>
+			</div>	
 		</div>
-		<script type="text/javascript">
-			var santaIcon = document.getElementById("santa");
-			var present = document.getElementById("present");
-			
+			<script type="text/javascript">
+				var santaIcon = document.getElementById("santa");
+				var present = document.getElementById("present");
+				
 
-			var presents = 0;
+				var presents = 0;
 
-			
-			function presLocation() {
-				if (presents !== 10) {
-					present.style.top = Math.random()*300 + "px";
-					present.style.left = Math.random()*450 + "px";
+				
+				function presLocation() {
+					if (presents !== 10) {
+						present.style.top = Math.random()*300 + "px";
+						present.style.left = Math.random()*450 + "px";
+					}
+					else
+						confirm("You win! You helped Santa retrieve all 10 presents!")
 				}
-				else
-					confirm("You win! You helped Santa retrieve all 10 presents!")
-			}
-			
-			var horizontalPos = 0
-			var verticalPos = 0
+				
+				var horizontalPos = 0
+				var verticalPos = 0
 
-			function update(e) {
-			    if (e.keyCode === 37){
-			        if (horizontalPos > -15){
-			        	horizontalPos += -20;
-			        	santaIcon.style.left = horizontalPos + "px";}
-			    }
-			    if (e.keyCode === 38){
-			    	if (verticalPos > -15){
-				        verticalPos += -20;
-				        santaIcon.style.top = verticalPos + "px";}
-			    }
-			    if (e.keyCode === 39){
-			    	if (horizontalPos < 465){
-				        horizontalPos += 20;
-				        santaIcon.style.left = horizontalPos + "px";}
-			    }
-			    if (e.keyCode === 40){
-			    	if (verticalPos < 315){
-				        verticalPos += 20;
-				        santaIcon.style.top = verticalPos + "px";}
-			    }
-			    pickUpPresent();
-			};
+				function update(e) {
+				    if (e.keyCode === 37){
+				        if (horizontalPos > -15){
+				        	horizontalPos += -20;
+				        	santaIcon.style.left = horizontalPos + "px";}
+				    }
+				    if (e.keyCode === 38){
+				    	if (verticalPos > -15){
+					        verticalPos += -20;
+					        santaIcon.style.top = verticalPos + "px";}
+				    }
+				    if (e.keyCode === 39){
+				    	if (horizontalPos < 465){
+					        horizontalPos += 20;
+					        santaIcon.style.left = horizontalPos + "px";}
+				    }
+				    if (e.keyCode === 40){
+				    	if (verticalPos < 315){
+					        verticalPos += 20;
+					        santaIcon.style.top = verticalPos + "px";}
+				    }
+				    pickUpPresent();
+				};
 
-			document.onload = presLocation;
-			document.onkeydown = update;
+				document.onload = presLocation;
+				document.onkeydown = update;
 
-			function pickUpPresent() {
-				if (
-			    	santaIcon.x <= (present.x + 20)
-			    	&& santaIcon.y <= (present.y + 20)
-			    	&& present.x <= (santaIcon.x + 20)
-			    	&& present.y <= (santaIcon.y + 20)
-			    	) {
-					++presents;
-					document.getElementById("counter").innerHTML = "Presents: "+ presents.toString();
-					presLocation();
+				function pickUpPresent() {
+					if (
+				    	santaIcon.x <= (present.x + 20)
+				    	&& santaIcon.y <= (present.y + 20)
+				    	&& present.x <= (santaIcon.x + 20)
+				    	&& present.y <= (santaIcon.y + 20)
+				    	) {
+						++presents;
+						document.getElementById("counter").innerHTML = "Presents: "+ presents.toString();
+						presLocation();
+					}
 				}
-			}
-		</script>
+			</script>
 		<div id="copyright"> Copyright &copy; Randy Grewal 2014</div>
 	</body>
 </html>
