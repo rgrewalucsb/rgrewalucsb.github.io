@@ -218,7 +218,13 @@
 						present.style.left = Math.random()*450 + "px";
 					}
 					else
-						confirm("You win! You helped Santa retrieve all 10 presents!")
+						if(confirm("You win! You helped Santa retrieve all 10 presents!")){
+							window.location.reload();
+						}
+						else{
+							confirm("You win! You helped Santa retrieve all 10 presents!");
+							window.location.reload()
+						}
 				}
 				
 				var horizontalPos = 0
