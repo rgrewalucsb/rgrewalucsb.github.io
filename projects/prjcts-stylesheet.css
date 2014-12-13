@@ -144,5 +144,6 @@ table td {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	text-align: center;
+	left:275;
+	top:275;
 }
