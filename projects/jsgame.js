@@ -3,7 +3,8 @@ var ctx = canvas.getContext('2d');
  
 canvas.width = 450;
 canvas.height = 450;
- 
+var santa = document.getElementById("santa");
+
 var mySprite = {
     x: 200,
     y: 200,
@@ -23,16 +24,16 @@ window.addEventListener('keyup', function(e) {
  
 function update(mod) {
     if (37 in keysDown) {
-        mySprite.x -= mySprite.speed * mod;
+        santa.x -= santa.speed * mod;
     }
     if (38 in keysDown) {
-        mySprite.y -= mySprite.speed * mod;
+        santa.y -= santa.speed * mod;
     }
     if (39 in keysDown) {
-        mySprite.x += mySprite.speed * mod;
+        santa.x += santa.speed * mod;
     }
     if (40 in keysDown) {
-        mySprite.y += mySprite.speed * mod;
+        santa.y += santa.speed * mod;
     }
 }
  
