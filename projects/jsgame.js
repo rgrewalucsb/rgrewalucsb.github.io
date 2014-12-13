@@ -5,9 +5,7 @@ canvas.width = 450;
 canvas.height = 450;
 var santa = document.getElementById("santa");
 
-var santa = {
-	speed = 100
-};
+santa.speed = 100
 
 var mySprite = {
     x: 200,
