@@ -6,7 +6,11 @@ canvas.height = 450;
 var santa = document.getElementById("santa");
 
 var santa = {
-	speed = 100
+	speed: 100,
+	x: 200,
+	y: 200,
+	 width: 50,
+    height: 50
 };
 
 var mySprite = {
@@ -26,8 +30,8 @@ window.addEventListener('keyup', function(e) {
     delete keysDown[e.keyCode];
 });
  
-function update(mod) {
-    if (37 in keysDown) {
+function move(e) {
+    if (e.keyCode == 37) {
         santa.x -= santa.speed * mod;
     }
     if (38 in keysDown) {
