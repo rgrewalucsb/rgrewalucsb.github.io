@@ -125,9 +125,14 @@ table td {
 	margin-right:auto;
 	display:inline-block;
 	background-color: white;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	border: 1px solid white;
+	border-radius: 3px;
 }
 #contact {
 	background-color: white;
+	border-radius: 5px;
 }
 #copyright {
 	width: 61%;
