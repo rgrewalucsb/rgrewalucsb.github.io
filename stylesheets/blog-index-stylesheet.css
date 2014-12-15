@@ -118,6 +118,12 @@ table td {
 	font-size: 38px;
 	color: #00225C;
 }
+#h2 {
+	font-family: Rock Salt, serif;
+	text-align: center;
+	font-size: 26px;
+	color: #00225C;
+}
 .logo {
 	width:400px;
 	height:auto;
