@@ -147,11 +147,11 @@ table td {
 }
 #tech {
 	display:inline-block;
-	width:375px;
+	width:40%;
 	float: left;
 }
 #cult {
 	display:inline-block;
-	width:375px;
+	width:40%;
 	float:right;
 }
