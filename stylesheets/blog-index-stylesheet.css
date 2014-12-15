@@ -145,3 +145,13 @@ table td {
 	max-width: 825px;
 	min-width: 800px;
 }
+#tech {
+	display:inline-block;
+	width:375px;
+	float: left;
+}
+#cult {
+	display:inline-block;
+	width:375px;
+	float:right;
+}
