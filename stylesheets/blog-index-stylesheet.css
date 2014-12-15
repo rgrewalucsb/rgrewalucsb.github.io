@@ -129,8 +129,8 @@ table td {
 	text-align: center;
 	font-size: 26px;
 	color: #00225C;
-	border-bottom: 1px solid #00225C;
-	margin-bottom: 2px;
+	border-bottom: 3px solid #B0B0B0;
+	padding-bottom: 4px;
 }
 .logo {
 	width:400px;
