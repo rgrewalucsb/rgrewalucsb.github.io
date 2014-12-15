@@ -111,6 +111,7 @@ table td {
 	margin-right:auto;
 	vertical-align: middle;
 	border-radius: 3px;
+	padding-right: 3px;
 }
 #weblink {
 	margin-left: auto;
