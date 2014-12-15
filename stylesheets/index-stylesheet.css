@@ -109,6 +109,7 @@ table td {
 	width:auto;
 	margin-left: auto;
 	margin-right:auto;
+	vertical-align: middle;
 }
 #weblink {
 	margin-left: auto;
@@ -124,15 +125,18 @@ table td {
 	font-family:Yanone Kaffeesatz,serif;
 	color: #00225C;
 	text-decoration: none;
+	vertical-align: middle;
 }
 #weblink a:hover{
 	text-decoration:underline;
 	color: #678EF5;
 	font-size: 16px;
 	box-shadow: 0 0 25px #678EF5;
+	vertical-align: middle;
 }
 #weblink a:visited{
 	font-size: 16px;
+	vertical-align: middle;
 }
 #h1 {
 	font-family: Rock Salt, serif;

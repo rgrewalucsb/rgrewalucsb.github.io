@@ -119,10 +119,11 @@ table td {
 	color: #00225C;
 }
 .logo {
-	width:400px;
+	width:15px;
 	height:auto;
 	margin-left: auto;
 	margin-right:auto;
+	display:inline-block;
 }
 #copyright {
 	width: 61%;
