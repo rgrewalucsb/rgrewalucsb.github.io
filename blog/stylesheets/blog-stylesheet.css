@@ -122,14 +122,14 @@ img {
 	position: fixed;
   	bottom: 10px;
   	right: 0;
-	width: 200px;
+	width: 185px;
 	border: 2px solid white;
 	background-color: #b0b0b0;
 	color: #00225c;
 	border-radius: 5px;
 	padding: 5px 10px 5px 10px;
 	max-width: 200px;
-	min-width: 190px;
+	min-width: 180px;
 }
 
 #share {
