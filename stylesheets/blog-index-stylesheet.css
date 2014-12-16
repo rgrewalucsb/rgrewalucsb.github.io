@@ -78,16 +78,14 @@ table td {
 	margin-left: auto;
 }
 #homepage {
-	border:3px solid white;
 	display: block;
 	border-radius: 5px;
 	margin-top: -5px;
 	margin-left: auto;
 	margin-right:auto;
-	width:895px;
-	background-color: white;
-	padding: 10px 10px 10px 10px;
-	max-width: 900px;
+	width:910px;
+	padding: 0px 10px 0px 10px;
+	max-width: 910px;
 	min-width: 890px;
 }
 
@@ -100,8 +98,6 @@ table td {
 	font-size: 24px;
 	line-height: 2;
 	font-family:Yanone Kaffeesatz,serif;
-	background-color: #B0B0B0;
-	border: 5px solid #B0B0B0;
 	border-radius: 5px;
 }
 #weblink a{
@@ -161,12 +157,18 @@ table td {
 	background-color: white;
 	border: 3px solid white;
 	border-radius: 5px;
+	width:895px;
+	max-width: 900px;
+	min-width: 890px;
 }
 #cult {
 	background-color: white;
 	border: 3px solid white;
 	border-radius: 5px;
 	margin-top: 10px;
+	width:895px;
+	max-width: 900px;
+	min-width: 890px;
 }
 .cont {
 	width:auto;
