@@ -158,6 +158,9 @@ table td {
 #pdf {
 	margin-right: auto;
 	margin-left: auto;
-	width:100%;
-	height:1066px;
+	width: 950px;
+	height: 2375px;
+	text-align: center;
+	display: block;
+	margin-top: -5px;
 }
