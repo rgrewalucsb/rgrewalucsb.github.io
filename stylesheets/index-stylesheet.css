@@ -50,21 +50,9 @@ table td {
 #headering {
 	border:3px solid white;
 	border-radius: 5px;
-	width:auto;
-	height:195px;
-	}
-
-#prof {
-	width:auto;
-	height:195px;
-	border:3px solid white;
-	border-radius: 5px;
-}
-#profile {
-	display:inline-block;
-	margin-right:auto;
-	margin-left:auto;
-	vertical-align: middle;
+	width:912px;
+	height:auto;
+	background-color: white;
 }
 #head {
 	display:inline-block;
