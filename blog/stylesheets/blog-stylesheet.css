@@ -1,6 +1,6 @@
 html {
 	background-color: #5E5E5E;
-	background-image: url("../rgrewalucsb.github.io/imgs/dark-wood-panels.jpg");
+	background-image: url("../imgs/dark-wood-panels.jpg");
 }
 * {
 	font-family: Yanone Kaffeesatz,Tahoma;
@@ -122,14 +122,14 @@ img {
 	position: fixed;
   	bottom: 10px;
   	right: 0;
-	width: 185px;
+	width: 180px;
 	border: 2px solid white;
 	background-color: #b0b0b0;
 	color: #00225c;
 	border-radius: 5px;
 	padding: 5px 10px 5px 10px;
-	max-width: 200px;
-	min-width: 180px;
+	max-width: 180px;
+	min-width: 170px;
 }
 
 #share {
