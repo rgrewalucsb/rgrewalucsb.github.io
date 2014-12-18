@@ -158,10 +158,10 @@ table td {
 	max-width: 915px;
 	min-width: 900px;
 }
-#tech a {
+#tech a img {
 	position: relative;
 }
-#tech a:after {
+#tech a img:after {
 	content:'';
     position:absolute;
     top:-10px; 
