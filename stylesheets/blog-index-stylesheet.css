@@ -89,17 +89,8 @@ table td {
 	line-height: 2;
 	font-family:Yanone Kaffeesatz,serif;
 	border-radius: 5px;
-	position: relative;
 }
-#weblink:after {
-	content:'';
-    position:absolute;
-    top:-10px; 
-    bottom:-10px; 
-    left:-100px; 
-    right:-100px; 
-    width:400px;
-}
+
 #weblink a{
 	font-family:Yanone Kaffeesatz,serif;
 	color: #00225C;
@@ -166,6 +157,18 @@ table td {
 	width:915px;
 	max-width: 915px;
 	min-width: 900px;
+}
+#tech a {
+	position: relative;
+}
+#tech a:after {
+	content:'';
+    position:absolute;
+    top:-10px; 
+    bottom:-10px; 
+    left:-100px; 
+    right:-100px; 
+    width:400px;
 }
 #cult {
 	background-color: white;
