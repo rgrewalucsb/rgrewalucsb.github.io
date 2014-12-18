@@ -26,7 +26,9 @@ table tr td a {
 }
 table tr td a:hover{
 	text-decoration:underline;
-	color: #678EF5;
+	color: #00225C;
+	box-shadow: 0px 0px 16px 3px rgba(0,166,255,1);
+	background-color: rgba(0,166,255,1);
 }
 table td { 
 	padding:5px 5px 5px 5px;
@@ -176,14 +178,18 @@ h4{
 .cont {
 	width:auto;
 	height: 21px;
-	margin-left: auto;
-	margin-right:auto;
+	margin-left: 2px;
+	margin-right:2px;
 	display:inline-block;
 	background-color: white;
 	vertical-align: middle;
 	margin-bottom: 2px;
 	border: 1px solid white;
 	border-radius: 3px;
+}
+.cont:hover {
+	box-shadow: 0px 0px 16px 3px rgba(0,166,255,1);
+	border: 1px solid rgba(42, 181, 255, 1);
 }
 #contact {
 	background-color: white;
