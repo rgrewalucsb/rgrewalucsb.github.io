@@ -30,11 +30,11 @@ table tr td a {
 .button:after {
 	content:'';
     position:absolute;
-    top:-10px; 
+    top:-9px; 
     bottom:-10px; 
-    left:-75px; 
-    right:-75px; 
-    width:300px;
+    left:-70px; 
+    right:-70px; 
+    width:180px;
 }
 table tr td a:hover{
 	text-decoration:underline;
