@@ -98,7 +98,7 @@ table td {
 #weblink a:hover{
 	text-decoration:underline;
 	color: #00225C;
-	font-size: 16px;
+	font-size: 24px;
 	box-shadow: 0px 0px 30px 10px rgba(0,166,255,1);
 	background-color: rgba(42, 181, 255, 1);
 	vertical-align: middle;
