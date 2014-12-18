@@ -30,9 +30,9 @@ table tr td a:after {
     position:absolute;
     top:-10px; 
     bottom:-10px; 
-    left:-50px; 
-    right:-50px; 
-    width:200px;
+    left:-75px; 
+    right:-75px; 
+    width:300px;
 }
 table tr td a:hover{
 	text-decoration:underline;
