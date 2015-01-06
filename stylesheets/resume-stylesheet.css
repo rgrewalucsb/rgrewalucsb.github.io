@@ -147,8 +147,8 @@ table td {
 	border-radius: 3px;
 }
 .cont:hover {
-	box-shadow: 0px 0px 30px 10px rgba(163, 223, 255, 1);
-	border: 1px solid rgba(163, 223, 255, 1);
+	box-shadow: 0px 0px 5px 1px rgba(114, 161, 200, 1);
+	border: 1px solid rgba(141, 168, 190, 1);
 }
 #contact {
 	background-color: white;
