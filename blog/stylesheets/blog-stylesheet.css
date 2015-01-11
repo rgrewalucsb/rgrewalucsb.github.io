@@ -130,7 +130,7 @@ ul li a {
 	text-decoration: none;
 	color: #00225c;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 ul li a:hover{
@@ -159,6 +159,21 @@ h4{
 	font-size: 16px;
 	text-align: center;
 	line-height: 0;
+}
+.archive{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	margin-left: -20px;
+	border-bottom: 1px solid white;
+}
+#archives{
+	margin-bottom: 0px;
+}
+#break{
+	margin-bottom: -10px;
 }
 #copyright {
 	width: 912px;
