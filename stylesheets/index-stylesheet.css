@@ -16,13 +16,13 @@ table {
 	text-align: center;
 }
 table tr td {
-	width:60px;
+	width:3.75em;
 }
 table tr td a {
 	text-decoration: none;
 	color: #00225C;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .button {
 	position: relative;
@@ -51,21 +51,21 @@ table td {
 	border-right:none;
 }
 #bar {
-	padding:10px 10px 10px 10px;
-	width:919px;
+	padding:0.625em 0.625em 0.625em 0.625em;
+	width:57em;
 	height:auto;
 	vertical-align: middle;
 	position:static;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	max-width: 920px;
-	min-width: 900px;
+	max-width: 57.5em;
+	min-width: 56em;
 }
 #headering {
 	border:3px solid white;
 	border-radius: 5px;
-	width:912px;
+	width:57em;
 	height:auto;
 	background-color: white;
 }
@@ -86,15 +86,15 @@ table td {
 	margin-top: -5px;
 	margin-left: auto;
 	margin-right:auto;
-	width:895px;
+	width:56em;
 	background-color: white;
 	padding: 10px 10px 10px 10px;
-	max-width: 900px;
-	min-width: 890px;
+	max-width: 56.5em;
+	min-width: 55.5em;
 }
 #Randy {
 	display: inline-block; 
-	width:440px;
+	width:27.5em;
 	height: auto;
 	vertical-align: middle;
 	padding: 5px 10px 5px 10px;
@@ -104,13 +104,13 @@ table td {
 	text-align: right;
 }
 #pic {
-	width: 350px;
+	width: 22em;
 	height: auto;
 	vertical-align: middle;
-	margin-left: 30px;
+	margin-left: 1.875em;
 }
 .logo {
-	height:30px;
+	height: 1.875em;
 	width:auto;
 	margin-left: auto;
 	margin-right:auto;
@@ -119,11 +119,11 @@ table td {
 	padding-right: 1px;
 }
 #weblink {
-	margin-left: 105px;
+	margin-left: 6.5em;
 	margin-right: auto;
 	display block;
 	color: #00225C;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 2;
 	font-family:Yanone Kaffeesatz,serif;
 }
@@ -139,34 +139,34 @@ table td {
     position:absolute;
     top:-10px; 
     bottom:-10px; 
-    left:-100px; 
-    right:-100px; 
-    width:400px;
+    left:-6.25em; 
+    right:-6.25em; 
+    width:25em;
 }
 #weblink a:hover{
 	text-decoration:underline;
 	color: #00225C;
-	font-size: 16px;
+	font-size: 1em;
 	box-shadow: 0px 0px 20px 5px rgba(154, 181, 194, 1);
 	background-color: rgba(174, 195, 206, 1);
 	vertical-align: middle;
 }
 #weblink a:visited{
-	font-size: 16px;
+	font-size: 1em;
 	vertical-align: middle;
 }
 #h1 {
 	font-family: Rock Salt, serif;
 	text-align: center;
-	font-size: 38px;
+	font-size: 2.375em;
 	color: #00225C;
 	line-height: 0.5;
 }
 #snip {
-	font-size: 16px;
+	font-size: 1em;
 }
 #copyright {
-	width: 912px;
+	width: 57em;
 	height: 15px;
 	border-radius: 5px;
 	border: 5px solid #b0b0b0;
@@ -177,12 +177,12 @@ table td {
 	margin-left: auto;
 	font-family: open sans, sans;
 	font-size: 12px;
-	max-width: 912px;
-	min-width: 900px;
+	max-width: 57em;
+	min-width: 56.5em;
 }
 .cont {
 	width:auto;
-	height: 21px;
+	height: 1.313em;
 	margin-left: 1.5px;
 	margin-right:1.5px;
 	display:inline-block;
