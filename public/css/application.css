@@ -63,14 +63,11 @@ body{
 .twitter-share-button {
 	float: right;
 }
-.fb-like {
-	float: left;
-	clear:right;
-}
+
 .fb_iframe_widget {
-	margin-top: -20px;
-	float: left;
-	text-align: left;
+	margin-top: 10px;
+	float: right;
+	text-align: right;
 }
 
 body {
