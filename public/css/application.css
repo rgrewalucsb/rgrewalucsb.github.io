@@ -16,7 +16,6 @@ body{
 }
 .main {
   padding: 40px 15px;
-  text-align: center;
 }
 #pic {
 	height: 370px;
@@ -137,4 +136,7 @@ body {
 .panheight {
 	height: 40px;
 	padding:10px;
+}
+.panel-heading {
+	text-align: center;
 }
