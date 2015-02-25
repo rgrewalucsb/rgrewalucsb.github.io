@@ -48,13 +48,14 @@ body{
 	display: block;
 }
 
-img.logo {
+.logo {
 	width: 500px;
 	height: auto;
 	margin-bottom: 10px;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
+	display: inherit;
 }
 .panel-body {
 	display: none;
