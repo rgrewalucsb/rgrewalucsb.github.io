@@ -3,7 +3,7 @@ $(document).ready(function() {
   	$('.panel-body').removeClass('active')
   	$(this).parent().parent().find('.panel-body').addClass('active')
   	$(this).parent().parent().find('.panel-body').addClass("animated fadeIn");
-    if ($this.parent().parent().find('.panel-body').hasClass('active')){
+    if ($(this).parent().parent().find('.panel-body').hasClass('active')){
       $(this).parent().parent().find('.panel-body').removeClass('active');
     }
   })
