@@ -9,7 +9,7 @@ $(document).ready(function() {
       debugger
       $(this).parent().parent().find('.panel-body').removeClass('active');
     }
-  }
+  })
   
 
   $('a.navname').on('click', function(){
