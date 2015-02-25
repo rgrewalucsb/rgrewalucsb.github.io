@@ -1,0 +1,140 @@
+#index_main{
+	display:block;
+	background-color: white;
+}
+#resume_main{
+	display:none;
+}
+#blog_main{
+	display:none;
+}
+#projects_main{
+	display:none;
+}
+body{
+	padding-top: 50px;
+}
+.main {
+  padding: 40px 15px;
+  text-align: center;
+}
+#pic {
+	height: 370px;
+	width: auto;
+}
+#nameheader{
+	width: 425px;
+	height: auto;
+	margin-bottom: 15px;
+}
+#snip {
+	font-size: 1em;
+	text-align: left;
+	width:425px;
+}
+#pdf {
+	margin-right: auto;
+	margin-left: auto;
+	width: 840px;
+	height: 2140px;
+	text-align: center;
+	display: block;
+
+}
+#pdfdiv {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.logo {
+	width: 500px;
+	height: auto;
+	margin-bottom: 10px;
+}
+.panel-body {
+	display: none;
+	padding-left: 157px;
+	padding-right: 157px;
+}
+
+.twitter-share-button {
+	float: right;
+}
+.fb-like {
+	float: left;
+	clear:right;
+}
+.fb_iframe_widget {
+	margin-top: -20px;
+	float: left;
+	text-align: left;
+}
+
+body {
+	background-image: url("/imgs/wood.jpg")
+}
+.title {
+	color:white;
+}
+.active {
+	display: block;
+}
+.logos {
+	height:35px;
+	width:35px;
+	border:none;
+	text-align: center;
+}
+
+#git {
+	background-color: #4183C4;
+	height:40px;
+	width:40px;
+	margin-left: 5px;
+}
+#linkedin {
+	background-color: #007FB1;
+	height:40px;
+	width:40px;
+	margin-left: 5px;
+}
+#gmail {
+	background-color: #DD4B39;
+	height:40px;
+	width:40px;
+	margin-left: 5px;
+}
+#plus {
+	background-color: #D14836;
+	height:40px;
+	width:40px;
+	margin-left: 5px;
+}
+#fb {
+	background-color: #3B5998;
+	height:40px;
+	width:40px;
+	margin-left: 5px;
+}
+#twitter {
+	margin-left: 5px;
+	background-color: #00ACED;
+	height:40px;
+	width:40px;
+	margin-left: 5px;
+}
+.navname {
+	font-size: 1.25em;
+}
+.navbar-brand{
+	font-size: 1.5em;
+}
+#homepage {
+	font-family: 'Playball', cursive;
+	font-size: 1.2em;
+}
+.panheight {
+	height: 40px;
+	padding:10px;
+}
