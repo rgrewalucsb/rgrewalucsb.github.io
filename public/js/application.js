@@ -1,13 +1,16 @@
 $(document).ready(function() {
   $('.panel-heading a').on('click', function(event){
-    if ($(this).parent().parent().find('.panel-body').hasClass('active')){
-      debugger
-      $(this).parent().parent().find('.panel-body').removeClass('active');
-    }
   	$('.panel-body').removeClass('active')
   	$(this).parent().parent().find('.panel-body').addClass('active')
   	$(this).parent().parent().find('.panel-body').addClass("animated fadeIn");
   })
+  $('.panel-heading a').on('click', function(event){
+    if ($(this).parent().parent().find('.panel-body').hasClass('active')){
+      debugger
+      $(this).parent().parent().find('.panel-body').removeClass('active');
+    }
+  }
+  
 
   $('a.navname').on('click', function(){
   	$parent = $('a.navname').parent().removeClass('active')
