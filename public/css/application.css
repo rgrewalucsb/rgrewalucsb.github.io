@@ -12,32 +12,32 @@
 	display:none;
 }
 body{
-	padding-top: 50px;
+	padding-top: 3.125em;
 }
 .main {
-  padding: 40px 15px;
+  padding: 2.5em 0.9375em;
 }
 #pic {
-	height: 370px;
+	height: 23.125em;
 	width: auto;
 }
 #nameheader{
-	width: 425px;
+	width: 26.5625em;
 	height: auto;
-	margin-bottom: 15px;
+	margin-bottom: 0.9375em;
 }
 #snip {
 	font-size: 1em;
 	text-align: left;
-	width:425px;
+	width:26.5625em;
 	margin-left: auto;
 	margin-right: auto;
 }
 #pdf {
 	margin-right: auto;
 	margin-left: auto;
-	width: 840px;
-	height: 2140px;
+	width: 52.5em;
+	height: 133.75em;
 	text-align: center;
 	display: block;
 
@@ -49,9 +49,9 @@ body{
 }
 
 .logo {
-	width: 500px;
+	width: 31.25em;
 	height: auto;
-	margin-bottom: 10px;
+	margin-bottom: 0.625em;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -59,8 +59,8 @@ body{
 }
 .panel-body {
 	display: none;
-	padding-left: 157px;
-	padding-right: 157px;
+	padding-left: 9.8125em;
+	padding-right: 9.8125em;
 }
 
 .twitter-share-button {
@@ -68,7 +68,7 @@ body{
 }
 
 .fb_iframe_widget {
-	margin-top: 10px;
+	margin-top: 0.625em;
 	float: right;
 	text-align: right;
 }
@@ -84,48 +84,48 @@ body {
 	display: block;
 }
 .logos {
-	height:35px;
-	width:35px;
+	height:2.1875em;
+	width:2.1875em;
 	border:none;
 	text-align: center;
 }
 
 #git {
 	background-color: #4183C4;
-	height:40px;
-	width:40px;
-	margin-left: 5px;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
 }
 #linkedin {
 	background-color: #007FB1;
-	height:40px;
-	width:40px;
-	margin-left: 5px;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
 }
 #gmail {
 	background-color: #DD4B39;
-	height:40px;
-	width:40px;
-	margin-left: 5px;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
 }
 #plus {
 	background-color: #D14836;
-	height:40px;
-	width:40px;
-	margin-left: 5px;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
 }
 #fb {
 	background-color: #3B5998;
-	height:40px;
-	width:40px;
-	margin-left: 5px;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
 }
 #twitter {
-	margin-left: 5px;
+	margin-left: 0.3125em;
 	background-color: #00ACED;
-	height:40px;
-	width:40px;
-	margin-left: 5px;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
 }
 .navname {
 	font-size: 1.25em;
@@ -138,8 +138,8 @@ body {
 	font-size: 1.2em;
 }
 .panheight {
-	height: 40px;
-	padding:10px;
+	height: 2.5em;
+	padding:0.625em;
 	text-align: center;
 }
 .panel-heading {
@@ -148,5 +148,5 @@ body {
 #heading{
 	margin-left: auto;
 	margin-right: auto;
-	width: 425px;
+	width: 26.5625em;
 }
