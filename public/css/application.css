@@ -34,7 +34,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
-#pdf {
+/*#pdf {
 	margin-right: auto;
 	margin-left: auto;
 	width: 59.5em;
@@ -42,7 +42,7 @@ body{
 	text-align: center;
 	display: block;
 
-}
+}*/
 #pdfdiv {
 	margin-left: auto;
 	margin-right: auto;
@@ -150,4 +150,11 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 26.5625em;
+}
+#res_img{
+	width:90%;
+	height:auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
