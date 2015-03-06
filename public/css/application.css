@@ -152,9 +152,10 @@ body {
 	width: 26.5625em;
 }
 #res_img{
-	width:90%;
-	height:auto;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	 width: 60%;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
