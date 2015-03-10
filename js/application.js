@@ -5,8 +5,9 @@ $(document).ready(function(){
 	/*global window, $ */
 	$(function () {
 	    'use strict';
-	    // Change this to the location of your server-side upload handler:
-	    var url = 'https://api.cloudinary.com/v1_1/dbc/image/file/upload/';
+
+	    var url = window.location.hostname === 'rgrewal.me' ?
+	    'https://api.cloudinary.com/v1_1/dbc/image/file/upload/';
 	    $('#fileupload').fileupload({
 	        url: url,
 	        dataType: 'json',
