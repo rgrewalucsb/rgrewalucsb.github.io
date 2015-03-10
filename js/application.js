@@ -7,7 +7,7 @@ $(document).ready(function(){
 	    'use strict';
 
 	    var url = window.location.hostname === 'rgrewal.me' ?
-	    'https://api.cloudinary.com/v1_1/dbc/image/file/upload/';
+	    			'//api.cloudinary.com/v1_1/dbc/image/file/upload/' : 'test.html';
 	    $('#fileupload').fileupload({
 	        url: url,
 	        dataType: 'json',
