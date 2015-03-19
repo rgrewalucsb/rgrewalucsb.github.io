@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../public/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../public/css/font-awesome.css" rel="stylesheet">
-  <link href="../public/css/docs.css" rel="stylesheet">
-  <link href="../public/css/bootstrap-social.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Rokkitt|Playball' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../public/css/normalize.css">
+<html lang="en" ng-app="randy">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Information, Resume and Projects">
+    <meta name="author" content="Randy Grewal">
+    <link rel="icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="../public/css/application.css">
+    <link rel="stylesheet" type="text/css" href="library/css/bootstrap.css">
+ 		<link rel="stylesheet" type="text/css" href="library/css/application.css">
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt|Playball' rel='stylesheet' type='text/css'>
+    <script src='library/js/angular.js' type="text/javascript"></script>
+    <script src='library/js/angular-animate.js' type="text/javascript"></script>
+    <script src='library/js/angular-ui-router.js' type="text/javascript"></script>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="../public/js/application.js"></script>
-</head>
-<body>
+    <script src='app.js' type="text/javascript"></script>
+  </head>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,525 +29,45 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="javascript:void(0)">Randy Grewal</a>
+          <a class="navbar-brand" href="#/home">Randy Grewal</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <div class="nav navbar-nav navbar-right">
-            <a class="navbar-btn navbar-right icon" href="https://twitter.com/rgrewalucsb"><img id='twitter' class='logos' src="../public/imgs/logos/twitter.png"></a>
-            <a class="navbar-btn navbar-right icon" href="https://www.facebook.com/randygrewalucsb"><img id='fb' class='logos' src="../public/imgs/logos/facebook.png"></a>
-            <a class="navbar-btn navbar-right icon" href="https://google.com/+RandyGrewalUCSB"><img id='plus' class='logos' src="../public/imgs/logos/googleplus.png"></a>
-            <a class="navbar-btn navbar-right icon" href="mailto:rgrewalucsb@gmail.com"><img id='gmail' class='logos' src="../public/imgs/logos/gmail.png"></a>
-            <a class="navbar-btn navbar-right icon" href="http://www.linkedin.com/in/rgrewalucsb"><img id='linkedin' class='logos' src="../public/imgs/logos/linkedin.png"></a>
-            <a class="navbar-btn navbar-right icon" href="https://github.com/rgrewalucsb"><img id='git' class='logos' src="../public/imgs/logos/github.png"></a>
+            <a class="navbar-btn navbar-right icon" href="https://twitter.com/rgrewalucsb"><img id='twitter' class='logos' src="public/imgs/logos/twitter.png"></a>
+            <a class="navbar-btn navbar-right icon" href="https://www.facebook.com/randygrewalucsb"><img id='fb' class='logos' src="public/imgs/logos/facebook.png"></a>
+            <a class="navbar-btn navbar-right icon" href="https://google.com/+RandyGrewalUCSB"><img id='plus' class='logos' src="public/imgs/logos/googleplus.png"></a>
+            <a class="navbar-btn navbar-right icon" href="mailto:rgrewalucsb@gmail.com"><img id='gmail' class='logos' src="public/imgs/logos/gmail.png"></a>
+            <a class="navbar-btn navbar-right icon" href="https://www.linkedin.com/pub/randeep-grewal/4a/bb9/143"><img id='linkedin' class='logos' src="public/imgs/logos/linkedin.png"></a>
+            <a class="navbar-btn navbar-right icon" href="https://github.com/rgrewalucsb"><img id='git' class='logos' src="public/imgs/logos/github.png"></a>
           </div>
-          <ul class="nav navbar-nav">
-            <li id='home' class="active"><a class='navname' href="javascript:void(0)">Home</a></li>
-            <li id='resume'><a class='navname' href="javascript:void(0)">Résumé</a></li>
-            <li id='blog'><a class='navname' href="javascript:void(0)">Blog</a></li>
-            <li id='projects'><a class='navname' href="javascript:void(0)">Projects</a></li>
+          <ul class="nav navbar-nav" ng-init="tog=1">
+            <li ng-class='{"active":tog==1}'><a ng-click='tog=1' ui-sref='home'>Home</a></li>
+            <li ng-class='{"active":tog==2}'><a ng-click='tog=2' ui-sref='resume'>Résumé</a></li>
+            <li ng-class='{"active":tog==3}'><a ng-click='tog=3' ui-sref='blog'>Blog</a></li>
+            <li ng-class='{"active":tog==4}'><a ng-click='tog=4'ui-sref='project'>Projects</a></li>
           </ul>
-        </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="main">
+      <div id='mainrow'>
+        <div ui-view="home" class="row" id='index_main'></div>
+        <div ui-view="resume" class="row"></div>
+        <div ui-view="blog" class="row"></div>
+        <div ui-view="project" class="row"></div>
+      </div>
           
-      </div>
-</nav>
-
-<div class="main" id='index_main'>
-    <div class="row">
-
-      <div class="col-xs-3 col-md-2">
-        
-      </div>
-
-      <div class="col-xs-6 col-md-4" id='homepage'>
-        <div id='heading'><img id="nameheader" src="../public/imgs/rgrewal.PNG"/></div>
-        <p id="snip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Randy Grewal is a people's person with a knack for technology. He recieved a Bachelor's Degree in Hydrological Sciences and Policy at UC Santa Barbara, but fell in love with Programming, Web and Graphic Design along the way. Beyond his education, he has experience in Sales and Marketing. His diverse background has taught him how to work well on teams as well as thrive under pressure. His background coupled with his confidence and positive attitude allows him to adapt to all sorts of working environments. Born and raised in California, he loves all kinds of music and a variety of sports. When he isn't working he likes to enjoy a beer with his friends or do something spontaneous.</p>
-      </div>
-      <div class="col-xs-6 col-md-4">
-        <img id="pic" src="../public/imgs/homepage.jpg"/>
-      </div>
-
-      <div class="col-xs-3 col-md-2">
-        
-      </div>
 
     </div>
-</div>
 
-<div class="main" id='resume_main'>
-    <div class="row">
-      <div class="col-xs-18 col-md-12">
-        <iframe id="pdfdiv" src="https://resume.creddle.io/embed/v4dutlfudw" width="850" height="1100" seamless></iframe> 
-      </div>
-    </div>
-</div>
+    
 
-<div class="main" id='blog_main'>
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
 
-    <div class="col-xs-12 col-md-8">
-      <h2 class='title'>Technical Blogs</h2>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            <a href="javascript:void(0)">GitBlog: A little bit about Version Control Software and its Benefits</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/githubinfo.jpg"/></a>
-          <p>GitHub and git is a version control software, or VCS. It allows programmers to track changes to a file collaboratively. Git allows for programmers to work on files locally and GitHub is the cloud that stores the master file. This way, if you are working with a team, you can work on a file without interfering with each other on your local machine and then push the changes to the cloud (GitHub) once you all agree that it is correct.
-          <br>
-          <br>
-          When you are working on your local machine (git), it only effects your specific version. If something goes wrong, like something is deleted or incorrectly added, you can go back to GitHub and see exactly what went wrong. Git also requires you to add and then commit any changes you have made, this way you are forced to double check before you decide to lock in any changes.
-          <br>
-          <br>
-          GitHub is especially useful to store your code. In case a file goes missing or God forbid, your computer completely crashes, you will always, essentially, have it backed up to GitHub. For a team of programmers working from different parts of the world, it is also extremely useful because you can do your end of the work from git and then merge each others contributions into one. While merging, GitHub also allows you to track each others' changes and if there are any conflicts, and then the team of programmers can communicate and figure out the best version.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            <a href="javascript:void(0)">Classes and IDs: Best Practices for Stylizing your HTML page with CSS</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/classID.png"/></a>
-          <p>In the past week, through my struggles of getting my website to look exactly how I want it to, I have learned a lot about HTML and CSS. In the first couple days, I found myself quite frustrated; I would finally get one thing to work and then something else would go wrong. At one point I just scrapped everything and decided to start over, but this time around, I would make my HTML a lot more CSS friendly. I looked at various websites and noticed their HTML was filled with classes and IDs. As for naming the classes and IDs I realized that the names were based on the function of that specific element. So, as I was typing the HTML this time around, I was very specific with my classes and IDs. I was also visualizing my end goal along the way so I knew exactly what elements should be the same class and which once need to be a specific ID. When it was done, the CSS was much easier and my website came together almost exactly how I imagined.
-          <br>
-          <br>
-          The way I coded my HTML my last time around worked really well for me and I intend to follow the same formula every time. The key to keeping yourself from pulling all your hair out when designing your website is organization. When creating your webpage I recommend first visualizing all the separate elements of your page, their location and their function. So for example, a navigation bar on the top right or a fixed sidebar on the bottom right that shows your blog posted in order. Next I would outline all your divs, tables, paragraphs, etc. on the HTML page; no content necessary, just the branches. This way you can figure out if you need two divs within another div and so forth. It is much easier to plan this out if you have just the branches and no clutter. Once all your major branches are created, go through and create IDs/classes. I like to have control of each element, so I used a lot more IDs. I did not create a class for an element unless I knew for sure that more than one element are going to have the exact same function. Once all the naming was done, I typed out all of the classes and IDs into my CSS file as selectors, so that they were in order and ready to go. This is when I finally went back in and typed in all of the HTML into the branches. Since the outline was already done, and the function of each element was already written as a class/ID, I had no guesswork and typing in all the HTML was a breeze. The CSS part was even easier; another benefit is that if I want to edit the layout of anything in the future, I know exactly what I am changing, just from looking at my CSS document on DevTools.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            <a href="javascript:void(0)">Ruby: Arrays and Hashes - When to Use Which</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/arrayhash.PNG"/></a>
-          <p> Arrays and Hashes are quite useful when it comes to Ruby. Both of them are uses to store a collection of different or similar object types, including strings and intergers. The difference is that an Array uses and interger-index as a key, whereas a Hash uses an object as a key to access another object, which is a value. If you still don't understand what I mean, then refer to the image above. Hashes are more flexible, but arrays elements are a lot easier to access.
-          <br>
-          <br>
-          An Array might be more useful when you want to access objects based on position relative to another. For example if you want to access the first object, you can use the index 0, and when you want to access the last object, you can use the index -1. 
-          Hashes are a lot more flexible than Arrays because you can choose to make your keys into symbols (This is a ":symbol"). Making the keys into symbols makes Hashes much easier to create and access. So instead of using strings as keys, as shown above, you can associate a key-value pair like this: family = { Randy: "dad"}. You would access the string "dad" by typing in family[:Randy].
-          <br>
-          <br>
-          Overall, an Array should be used when the relative order of the objects is the most important factors. On the other hand, a Hash should be used when you need to map out a set of pairs, where the key-value is the most important factor, and the relative order does not matter. For example, I would use an Array if I wanted to sort out a set of numbers, such as grade percentages, and find the median. I would use a Hash if I wanted to create a set of movie titles and their respectice ratings.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Ruby: Enumerable Method: #Map</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/Enumerable.PNG"/></a>
-          <p>The Enumerables module is a has a whole package of methods that can mix together and work quite efficiently. Since I have started to learn Ruby, Enumerables have made my life a lot easier. Before, when I was a complete beginner, I found myself making really complicated code to do the most simple tasks. But then I found out that there is a way to do something to every element in a collection, with a simple line of code from the Enumerable module.
-          <br>
-          <br>
-          The specific Enumerable method known as map, is one I have found to be the most useful thus far. Map, also known as collect (yeah it does the exact same thing), returns the result of running the block specified on each element of the code. So for example, [1,2,3,4].map { |x| x + 1 } would return the array [2,3,4,5]. Having the ability to type whatever block best fits your program, makes map a very diverse method. There are many ways to manipulate this code in combination with other Enumerables. If the block is not specified, however, map returns an enumerator.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Ruby: Classes</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/classruby.PNG"/></a>
-          <p> Ruby is a Object-oriented programming language. Classes are a great example of of this object oriented design. When thinking about designing a Class, the objects it is going to represent usually have a similar purpose. The objects you plan to create with the Class will usually hold similar information, through variables, or accomplish a similar task, through methods. For holding information, Classes use instance variables, which basically represent an object's data or unique values.
-          <br>
-          <br>
-          The best way to understand Classes, from my personal learning experience, is through examples. Frequently referring to the image above, I am going to walk you through creating a Class for my objects, movies. For now, ignore the attr_reader, attr_writer, and attr_accessor, I will come back to that later. So to create the Movie Class, I am going to first define the initialize; this is exactly  what it sounds like, this is what is initialized when a new class is created. My initialize is going to take one argument, the title, because every movie object you create is definitely going to have a title. So, for example, I would initialize an new Movie class later on like so: django = Movie.new("Django"). As you can see here and above in the image, everytime I initialize a new object of the Movie class, I would store it in a new variable, like I did for django.
-          <br>
-          <br>
-          Next, I want the class to also have the option to hold two other variables, the director and the rating. To do this, I first created instance variables of them and then I set them to a default value if they are left unchanged. These variables, however, are not initialized with the new class. You may ask, then how do you change or access the director or rating? Well that is where the attr_reader(read), attr_writer(write), and attr_accessor(both read and write) come in handy. Attr lets you either read, write, or both read and write variables outside of the class. Above you may notice I added :director under attr_reader and attr_writer; this is the exact same thing as putting :director under attr_accessor as I did for :rating. After adding the attr's, now I can view the title outside the class by simply typing inglourious_basterds.title . I can do the the same with director and rating, but in addition I can also change them by typing inglorious_basterds.director = "Quentin Tarantino".
-          <br>
-          <br>
-          Lastly, I created a movie_info method. This is a very simply method that displays the movie info in a sentence through puts. Refering to the same line, you can also take note of how I refer to the variables in the method. There are many ways to do similar tasks in Ruby, so I can do something similar to the movie_info method outside of the class, as I did for scarface. You get a great feel of this by comparing how inglourious_basterds.movie_info is different from puts "#{scarface.title} was ..." yet the output comes out to the same thing.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            <a href="javascript:void(0)">Ruby: Object-Oriented vs. Functional Programming</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/OOPFP.PNG"/></a>
-          <p>Object-Oriented (OOP) and Functional Programming (FP) are two different schools of thought for building the structure and elements of code. Simply put OOP focuses more on creating new objects and increasing the scope of old ones by adding new methods to them. For FP, on the other hand, the main focus is not the data structure, but instead implementing functions and performing different operations. Both of these design structures are very useful, the programmer picks either depending on the outcome he/she is looking for. Most people think of Ruby as just a OOP language, however it has elements of OOP and FP, so that you can use them hand in hand or seperately.
-          <br>
-          <br>
-          In Functional Programming, programmers avoid state and mutable data, which allows it to have a much cleaner code. In OOP, you tend to frequently overwrite the variables, which makes the code hard to debug at times and it also leaves a lot of room for error. In the FP approach, you do not overwrite old functions and you continue to create new ones so that the functions stay isolated. Michael Feathers put it best in his quote, "OO makes code understandable by encapsulating moving parts.  FP makes code understandable by minimizing moving parts." Basically, OOP you have to continually define new methods and create objects, so as a result you are left with a lot of moving parts. Since you have many moving parts the code is more easily broken and takes more time to execute. FP on the other hand approaches code on a "as needed" basis, so it focuses more on the function and has lazy evaluations, which evaluates code by need. Both FP and OOP are great approaches to coding, but well constructed code will use the best programming paradigm for each case.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Ruby Hashes vs. JavaScript Objects</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/rubyvsjava.png"/></a>
-          <p>I have spent the past for weeks learning Ruby and the couple weeks before that were spent on HTML and CSS. The order we were taught each langauage was set up to sort of ease us into programming and everything is supposed to get harder as we progress. The first two weeks of Ruby were the hardest for me because the concepts were relatively new and it was kind of hard to get a hang of. By week four of Ruby I felt pretty confident with my Ruby abilities and I felt that I could tackle any challenge thrown my way.
-          <br>
-          <br>
-          This week when we jumped into JavaScript I was a little nervous but at the same time excited to learn a new language. I was suprised to find that JavaScript was relatively easy for me to understand. I guess spending that much time learning Ruby taught me how to correctly learn a language and know what to look for. When I looked at JavaScript for the first time I immediately started to notice the similarities and differences between it and Ruby. Having that comparison baseline helped me mentally map out JavaScipt.
-          <br>
-          <br>
-          I noticed a couple things but what stood out the most to me was the similarity between Ruby Hashes and JavaScript Objects. I was pretty comfortable with Hashes in Ruby and it turns out that JavaScripts are almost the same thing, but they are even easier to manipulate. As shown in the image above, creating a new Hash in Ruby is almost exactly the same technique as creating a new object and adding a property in JavaScript. In order to create a new key-value pair in Ruby there is only one way to go about it and that is shown on line 3. However, in JavaScript, there are several ways to add, change, and display object properties as shown on lines 3 through 6. Another similarities between JavaScript objects and Ruby I noticed is editing object properties. On line 3 you may notice that I am adding a property to the (obj) object called age with a value of 22. This is very similar to giving a Ruby Class variable an attr_accessor ability. I've found that comparing and contrasting languages is the best and quickest way to learn new languages. I am only 1 week into JavaScript and I feel incredibly confident in my ability to tackle challenges in the coming weeks.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">What is Rails?</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/rails.jpg"/></a>
-          <p>Ruby on Rails is basically a software library or RubyGem that is added to the Ruby language. Often called Rails, it is a sort of framework for building websites, with an added benefit of easier maintancence and collaberation. More specifically it combines all the useful web programming languages such as HTML, CSS, and JavaScript in order to transform the website into a web application which runs on a web server.
-          <br>
-          <br>
-          Rails is considered more of a back-end programming tool. It is considered to be a very productive language illustrated by its two main philosphies. The first is "Don't Repeat Yourself" and the second is "Convention over Configuration." It allows you to minimize repetitive and lame tasks in order to build a more complex and interactive website, in other words, a web application. It allows you to combine multiple website programming languages into a seamless tool. The fact that it is run on a web server just adds to the incredible functionalality of the Ruby on Rails framework; it is by far the best way to create a powerful and dynamic web application.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Working on My Professional Website</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/pro-website.PNG"/></a>
-          <p>Throughout phase 0 of Dev Bootcamp I continued to tinker and improve my website, mainly because I am a little OCD and I wanted to get it just right. I explored many websites and I picked up quite a few cool HTML/CSS tricks along the way, such as the after selector to make my links have a clickable area like a button. From the start, I tried to make my website look neat and easily maneuverable and by week 9 I loved the way it looked. Sticking to my maintenance schedule had a lot to do with getting my website this way. This wasn't the first time I asked for feedback on my website, so I had already integrated a lot of the ideas that I had gotten from my peers. For anyone thinking about creating their own website, I highly recommend googling some personal websites to get some ideas before actually coding your HTML. Creating your own webpage is probably one of the best ways to learn HTML and CSS. After a total of about 40 hours (not in one sitting) of trial and error, I have a solid understanding of HTML/CSS, which is a great skill to have.
-          <br>
-          <br>
-          This week I decided to finally give my website its own Domain Name. Right when I started DBC I was tinkering around on GitHub and I stumbled upon a free <a href="https://education.github.com/pack">student developer pack</a> offered by GitHub Education. It came with a wide array of tools including my own Domain Name through Name through <a href="https://www.namecheap.com/"> Namecheap</a>, free for the first year. I ended up with a solid domain name, rgrewal.me, and now I just need to figure out how to get it working and link it to my github website. I found a solid article by David Densinger for <a href="http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/">Setting the DNS for GitHub Pages on Namecheap</a>. Within an hour I had got it working and now I have a great professional website, complete with my resume, some projects, my contact information, and quite a few blog posts. If you have any questions on how I created an of the elements on my website feel free to get in touch with me!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <h2 class='title'>Cultural Blogs</h2>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            <a href="javascript:void(0)">DBC Culture: The Dev Bootcamp Experience and Culture Thus Far</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/dbc.png"/></a>
-          <p>After watching Shareef's Fireside Chat, my take on the Dev Bootcamp experience is that it is a very positive and constructive learning environment. DBC does not only teach you code, but also teaches you the correct growth mindset so that you can absorb the material quickly and also become a better person along the way.
-          <br>
-          <br>
-          DBC creates an evironment where, for once, it is okay to be wrong. They aim to give you a mindset where you can give and recieve constructive feedback, which is immensely valuable in any future work environment. Everyday, I have found a new thing I enjoy about DBC. They do not aim to simply toss a couple coding languages at me and send me on my way. Instead, the goal is much broader: they want to give me the proper framework and tools so that I can continue to learn new programs and skills throughout the rest of my career. 
-          <br>
-          <br>
-          I am extremely excited to take part in the DBC environment because they continue to exceed my expections. When I previously attempted to learn code on my own, I was constantly nervous because I was always unsure of myself and I would find myself at a dead end quite often. The fact that I have a group of peers, instructors, and resources that I can bounce questions off of makes me quite comfortable, because I know that no matter what happens, I will always have someone to turn to. 
-          <br>
-          <br>
-          I am looking forward to see where the DBC experience takes me and I am eager to become a better person and hopefully a decent programmer.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            <a href="javascript:void(0)">My Thinking Style: How my Mind Works and Learns Best</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/gregorc.png"/></a>
-          <p>My <a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">Gregorc Thinking Style</a> is categorized as Abstract Random. I think it is quite accurate in describing how my mind works and how I learn best. I have always thought of myself as a very abstract thinker. I can imagine and visualize things pretty clearly but that sometimes causes me to get ahead of myself. I absorb material pretty quickly and as a result I start looking for answers to questions that I do not need to know just yet. This goes hand in hand with my Random thinking style. I sometimes overlook important aspects of information I have recieved, but this has made me into a quite flexible learner. I am very spontaneous because my mind starts to wander in every which way; this more often than not makes it hard for me to focus on the task at hand. I love to learn things from my peers because to be completely honest, reading is pretty boring. This has allowed me to get very comfortable with interaction and consequently, I am an extremely outgoing person. I am a friendly person, but it is hard for me to work with people who are too bossy or that just don't seem very friendly. It is always hard for me to get things started because I brainstorm too much, but once I do get started, it's quite hard for me to stop until I feel what I have done is perfect.
-          <br>
-          <br>
-          So far, I think Phase 0 has been very interesting and I have learned a lot from the challenges as well as my peers. The biggest struggle for me thus far has been timeboxing. This is solely because of my thinking style; I am a perfectionist at heart and that has forced me to spend way too much time on certain challenges. I am constantly thinking about how I can make things even better, so I end up spending five hours on challanges that only require a minimum viable product. In order to use my time better, I am going to start by dividing the challenge into major parts/requirements and use the <a href="http://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730">Pomodoro Technique</a> to complete each major part. Once I am done with all of the weeks challenges, I can go back to tinker and perfect anything I want, if I have time to spare.
-          <br>
-          <br>
-          In the past few weeks at DBC, I feel that I have already started to transform my mindset into a <a href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/">growth-mindset</a>. I have been taking every challenge, pairing session, and reflection as a learning experience. I have been learning from my mistakes, my peers, and a lot from myself. This is the first time I have been excited to tackle "homework assignments" and I have absorbed more material in these 3 weeks than I probably could have in an entire quarter of college. I attribute this entirely to getting myself in the right positive mindset. The amazing part about changing my gears into a growth-mindset, is that I can assess what I need to work on, and in turn I can continue to grow day by day.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">The Tech Industry Issue of Privacy</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/privacy.jpg"/></a>
-          <p> As technology is becoming more and more advanced, consumer privacy has become almost nonexistent. Even the most seeminly harmless devices now come equipped with geolocation tracking services, including cameras, smartphones, and even fitness watches. Tech giants like Facebook and Google are even known to collect data such as browsing history, location, and so forth to give users "customized ads". Don't get me wrong, I love seeing information relative to my likings, but the fact that this information is stored and it can be hacked into is not the most comforting feeling. The devices we own nowadays upload a lot more data, that most would care to share with the public. When posting a status or uploading an image, most Americans are unknowingly posting their location, which could very well be their exact address. On top of that, we have been hearing that many tech giants have turned over their data to the NSA. At that point, where do they draw the line? Could someone purchase my information from these companies for the right price? Am I going to start getting mail specific to what I have been searching on the web for the past few weeks? 
-          <br>
-          <br>
-          These are questions anyone could ask, which explains why a large portion of consumers have lost there confidence in tech companies. I love everything about technology, but not being able to trust it is a huge turn off. I have nothing to hide from the NSA, I am more worried about this information getting into the wrong hands. Since many tech companies share there data with other companies through marketing partnerships, what security measures do they have to prevent a data breach. Even a huge company like Home Depot was had a major data breach a couple months back. I think the best way to remedy the situation is for all tech companies that store any personal data should be more forthcoming with the consumer. If they are going to partner up with other companies, they should make sure that their data security standards are up to par. If tech companies start to be straight forward with customers and work with them to protect their privacy, it will be more beneficial for both in the long run.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Pairing and Feedback</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/feedback.jpg"/></a>
-          <p>One of the main reasons I decided to join DBC was the culture and I feel that pairing is a huge part of that culture. I have taken several free online courses and the main thing that they were lacking was guidance and people to help you. When I would hit a dead end, knowing that I had no one I could really ask for help was a disheartening experience, it just makes you feel that you aren't cut out for coding. In DBC so far, I have had an awesome exerience pairing on challenges. Knowing that you have a group of peers and guides to help you has made my learning experience that much more effective. Every pairing session I have learned so many new things, new ways to code, and overall just having peer interactions makes learning that much more fun. Even though the work is completely remote, I feel really involved and invested in the program. Pairing is a learning and teaching experience. Each time I have paired up, I try to pass off something new I have learned and that also helps reinforce the topic, so that you don't forget about it.
-          <br>
-          <br>
-          Feedback is another huge part of the DBC culture that I love. Feedback is a sort of progress report, and personally, I have always liked to have some sort of idea where I stand. Whether the feedback is about what subject I am slacking on in school or what level I am on in a video game, it is always helpful. It is nice to know what I need to work on, I have always been good about taking suggestions. In one of my feedback comments, my peer told me that I should check out a specific chapter in a book and when I did I was grateful, I understood classes that much more. Even if the feedback is something about me personally, I am all about constant self improvement, I want to continue to grow in every aspect and become a better person, so it is awesome to know what I should work on. I think the main thing I need to work on is the feedback I am giving people. I am very laid back and easy to work with, so its hard for me to really recognize faults with people, but I just need to make sure my feedback is more actionable. My feedback is always kind and specific, but I need to take a step back to analyze the more actionable things my peer could work on. Overall, pairing and feedback are very important to a succesfull future in any career path, so they are great tools to get used to and improve on right now.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Stereotype Threat</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/stereotypethreat.png"/></a>
-          <p>Stereotype threat is being in a situation where a negative stereotype about your identity can be applied to you. Personally I have felt a stereotype threat in a couple very different situations. When I was young, I loved watching basketball, I grew up watching Michael Jordan. When it came to my first tryout, I was very intimadated by the other players and a lot of it had to do with the fact that I was trying out again mainly white and black kids. I had never see someone of Asian or Indian descent play in the NBA so I naturally assumed we are not that good. That coupled with the fact that kids 50 kids are  trying out and more than half have to get cut from the team, made me very nervous. Even later on in highschool I played basketball because I am 6'3 so my height is an advantage for basketball. Even though I was pretty good after playing for several years, that nervous feeling never went away, I always found myself folding under pressure when we were playing really good teams. 
-          <br>
-          <br>
-          On the other end of the spectrum, people of Indian or Asian descent tend to be good at math, science etc. I found myself excelling in math/science classes with minimal effort. A lot of this had to do with the fact that math and science are my favorite subjects, but compared to other subjects, I feel a lot more confident and decisive during math and science tests. But this makes me wonder if I am good at math and science because of the confidence the positive stereotype instilled in me. After going to a pretty diverse college and having a very diverse group of friends, I have seen stereotype threat, but I have also learned that you can work to get past the threat. Personally, I think optimism is a great start for evading this stereotype threat. When going into a test or any situation, I think positivity helps you keep a clear mind. I have gotten into my own head for a test and that was honestly the worst feeling in the world. You can try to pass blame on your situation or a stereotype, but the best thing to do is to accept it, figure out what you can improve on, and focus on that, as oppose to beating yourself up over it. Ever since, I always go in and leave knowing that I did my best, I studied to the best of my ability, and it has nothing to do with my social identity.
-          <br>
-          <br>
-          When giving people feedback, this is why we use the ASK model. It allows us to focus on the things we can change, not things based on our social identity. I treat others how I would want to be treated. We are all different, we have our strength and weakness, but we are all in common because we want to improve ourselves as people and programmers. Everyone should always get a fair chance, no matter what stereotypes exist. We need to forget about static stereotypes and instead focus on learning from each other.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Affirmation and Stereotype Threat</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/affirmation.png"/></a>
-          <p>Helping others is important to me because everytime I have helped someone, I have felt happy, proud and satisfied all at the same time and through a selfless act. The first time I realized it was important to me was when I was doing community service at a homeless shelter. The gratitude I got from helping people in need made me feel awesome. Ever since then, whenever someone asks for my help, I do what I can whether they are my friends, family, or even someone I don't know. If I know I can help someone and I don't, it bothers me down the road and I regret it. Just having that in my conscience is a reaffirmation that I should always at least try to help people.
-          <br>
-          <br>
-          The last topic someone asked me for advice on was: "What should I do with my life?" My younger cousin is getting ready to go to college so he wanted to know my opinion on it, after the four years I spent at UCSB. I told him at first I was worried about my career, I was worried about getting into a field with good pay, but thinking back all my thoughts were kind of superficial. After four years I realized I should have just done something I am interested in and I am good at, the rest will come by itself because of your motivation in the subject matter. I told him that you should do what makes you happy, something you wouldn't mind doing for the next 30 or so years.
-          <br>
-          <br>
-          My values have made me into the person I am and I am happy I was raised with those values because without them I would be lost. If I ever recognize that I feel stereotype threat I think my values can help a little to mediate it, but I also think it is very hard to mediate. We have been raised in a society where it exists throughtout the system and most people are completely ignorant to it if they have not directly felt the effects of it. Personally, over the years I have pushed myself to become a positive person. Holding on to the negative things in life too long only holds you down. Similarly, I would just try not to think about stereotype threat because it is all mental. Whenever I am feeling down, what works for me is to take a couple deep breaths and think about why I am doing DBC, what are my goals in life, and who am I doing this for. Just thinking about things beyond myself always helps me pick myself up!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Conflict</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/conflict.jpg"/></a>
-          <p> The most recent emotional conflict I have had was with my mom. Throughout college I was independent and was living for one only myself to the point where I got really comfortable. Upon graduation, this lead me to immediately pursue a job away from home in LA so that I can continue to be independent and not be a burden to my parents. After three months of working hard hours in sales my mom pleaded my to come home to help out around the house, be rent free, as well as further my education so I don't have to work hard hours to make very little. I finally agreed and came back home, but every day I seemed to be frustrated at everyone, including myself. I ended up getting into an argument with my mom about the entire situation and then after thinking about it for a while I realized I was blaming the wrong people. I got too comfortable with being independent to the point where change was making me feel frustrated. My parents are supporting me to further my education and only want the best for me. How can I blame them? I realized I was being selfish; I should be more grateful that they showed the initiative to help me to better my life and actually pursue a career I would enjoy. Upon this realization, I found myself become more happy, close and grateful of my family and all the frustration and anger had gone away. The next time around when dealing with a conflict, thinking through the source of the conflict will help me avoid unnecessary stress and, as a result, find a much more reasonable solution for the problem.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a href="javascript:void(0)">Asking Good Questions</a>
-        </div>
-        <div class="panel-body">
-          <img class="logo" src="../public/imgs/questions.jpg"/></a>
-          <p>Asking a good question starts with trying your hardest to solve it yourself beforehand, through perusing a variety of resources such as stack overflow. More than likely, some version of your question has been ask before. Sometimes you need to check several different resources because you might only find bits and pieces of the answer you are looking for. This process helps you learn new things along the way. This way you at least try you best to tackle it on your own and are prepared to list different ways you have tried to solve it. If you cannot find a single thing on the question, then it is probably already a great question to ask, because other might be wondering the same thing.
-          More than often you have everything working, and it might just be one tiny mistake. As a result, research will allow you to compare and contrast so you can make sure it is not, what we later refer to as a stupid mistake.
-          <br>
-          <br>
-          Personally, when I get around to actually asking a question, it is after struggling on something for at least an hour. I am a little stubborn and I try to make sure I gave it my all before I ask. What I believe characterizes a good question is that it is phrased in a matter that emphasizes the main issue, without overlooking the sources of the issue. Your goal should also be addressed in a very specific manner as well as all of the difference solutions you have tried through researching the question. When you ask a vague question, you are going to get vague answers. You can usually get vague answers through a simple google search so specificity is a key aspect. This means you need to include the scenario in which you are addressing the problem, a screen shot of your issue, code, etc., and also include the errors you are getting. After getting an answer, do not get ahead of yourself, make sure you understand the solution completely and feel free to ask for further clarification of what you were doing wrong.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-</div>
-
-<div class="main" id='projects_main'>
-  <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-
-    <div class="col-xs-12 col-md-8">
-      <h2 class='title'>Projects</h2>
-    </div>
-
-    <div class="col-xs-3 col-md-2"></div>
-  </div>
-  <div class="row">
-    <div class="col-xs-2 col-md-1"></div>
-    <div class="col-xs-2 col-md-1"></div>
-    <div class="col-xs-12 col-md-8">
-      <div class="panel panel-default panheight">
-        <a href="../public/projects/gps1-2.html" target="_blank">Pair Programming, by Kevin Alwell & Randy Grewal</a>
-      </div>
-      <div class="panel panel-default panheight">
-        <a href="../public/projects/javascriptgame.html" target="_blank">A Simple JavaScript Game</a>
-      </div>
-      <div class="panel panel-default panheight">
-        <a href="../public/projects/cheat-sheet.html" target="_blank">JavaScript Cheatsheet</a>
-      </div>
-      <div class="panel panel-default panheight">
-        <a href="http://bart-eta.herokuapp.com/" target="_blank">Bart-Eta Heroku Application, Using the Bart API</a>
-      </div>
-      <div class="panel panel-default panheight">
-        <a href="http://musicstreamify.herokuapp.com/" target="_blank">Streamify: Music Video Streaming Heroku Application, Using the EchoNest and Oembed API</a>
-      </div>
-      <div class="panel panel-default panheight">
-        <a href="http://todolistr.herokuapp.com/" target="_blank">TodoListr: Todos List Heroku Application, Entirely Dynamic</a>
-      </div>
-      </div>
-    </div>
-    <div class="col-xs-2 col-md-1"></div>
-  </div>
-</div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
-  <script src="../public/js/bootstrap.min.js"></script>
-
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="library/js/jquery.js"></script>
+    <script src="library/css/bootstrap.js"></script>
+  </body>
 </html>
-

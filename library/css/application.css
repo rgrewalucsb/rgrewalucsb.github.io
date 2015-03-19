@@ -1,0 +1,165 @@
+#index_main{
+	display:block;
+	background-color: white;
+}
+#resume_main{
+	display:none;
+}
+#blog_main{
+	display:none;
+}
+#projects_main{
+	display:none;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.main {
+  padding: 2.5em 0.9375em;
+}
+#pic {
+	padding-bottom: 1em;
+	width:80%;
+	margin-left: -2em;
+}
+#nameheader{
+	width:80%;
+	margin-bottom: 0.9375em;
+}
+#snip {
+	font-size: 100%;
+	text-align: left;
+	width:82%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*#pdf {
+	margin-right: auto;
+	margin-left: auto;
+	width: 59.5em;
+  height: 152.75em;
+	text-align: center;
+	display: block;
+
+}*/
+/*#pdfdiv {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}*/
+
+.logo {
+	width: 31.25em;
+	height: auto;
+	margin-bottom: 0.625em;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: inherit;
+}
+.panel-body {
+	padding-left: 9.8125em;
+	padding-right: 9.8125em;
+}
+
+.twitter-share-button {
+	float: right;
+}
+
+.fb_iframe_widget {
+	margin-top: 0.625em;
+	float: right;
+	text-align: right;
+}
+
+body {
+	background-image: url("../../public/imgs/wood.jpg")
+}
+.title {
+	color:white;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+.active {
+	display: block;
+}
+.logos {
+	height:2.1875em;
+	width:2.1875em;
+	border:none;
+	text-align: center;
+}
+
+#git {
+	background-color: #4183C4;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
+}
+#linkedin {
+	background-color: #007FB1;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
+}
+#gmail {
+	background-color: #DD4B39;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
+}
+#plus {
+	background-color: #D14836;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
+}
+#fb {
+	background-color: #3B5998;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
+}
+#twitter {
+	margin-left: 0.3125em;
+	background-color: #00ACED;
+	height:2.5em;
+	width:2.5em;
+	margin-left: 0.3125em;
+}
+.navname {
+	font-size: 1.25em;
+}
+.navbar-brand{
+	font-size: 1.5em;
+}
+#homepage {
+	font-family: 'Playball', cursive;
+	font-size: 1.2em;
+	padding:1em;
+}
+.panheight {
+	height: 2.5em;
+	padding:0.625em;
+	text-align: center;
+}
+.panel-heading {
+	text-align: center;
+}
+#heading{
+	margin-left: auto;
+	margin-right: auto;
+}
+#homepadding {
+	padding: 2em;
+}
+#res_img{
+	 width: 60%;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
