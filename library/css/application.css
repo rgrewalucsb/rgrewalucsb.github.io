@@ -163,3 +163,6 @@ body {
   margin-right: auto;
   display: block;
 }
+.embed-responsive {
+  width: 850px;
+}
