@@ -124,7 +124,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('blog.c_post1', {
       url: '/cultural_1',
       views: {
-        'blog.c_post10': {
+        'blog.c_post1': {
           templateUrl: 'templates/posts/c_post1.html',
         }
       },
