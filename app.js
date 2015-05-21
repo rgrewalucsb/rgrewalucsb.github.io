@@ -41,154 +41,118 @@ app.config(function($stateProvider, $urlRouterProvider) {
       data: {tog: 3}
     })
     .state('blog.post1', {
-      url: '/1',
+      url: '/technical_1',
       views: {
         'blog.post1': {
-          templateUrl: 'templates/posts/post1.html',
+          templateUrl: 'templates/posts/t_post1.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post2', {
-      url: '/2',
+    .state('blog.t_post2', {
+      url: '/technical_2',
       views: {
-        'blog.post2': {
-          templateUrl: 'templates/posts/post2.html',
+        'blog.t_post2': {
+          templateUrl: 'templates/posts/t_post2.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post3', {
-      url: '/3',
+    .state('blog.t_post3', {
+      url: '/technical_3',
       views: {
-        'blog.post3': {
-          templateUrl: 'templates/posts/post3.html',
+        'blog.t_post3': {
+          templateUrl: 'templates/posts/t_post3.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post4', {
-      url: '/4',
+    .state('blog.t_post4', {
+      url: '/technical_4',
       views: {
-        'blog.post4': {
-          templateUrl: 'templates/posts/post4.html',
+        'blog.t_post4': {
+          templateUrl: 'templates/posts/t_post4.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post5', {
-      url: '/5',
+    .state('blog.t_post5', {
+      url: '/technical_5',
       views: {
-        'blog.post5': {
-          templateUrl: 'templates/posts/post5.html',
+        'blog.t_post5': {
+          templateUrl: 'templates/posts/t_post5.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post6', {
-      url: '/6',
+    .state('blog.t_post6', {
+      url: '/technical_6',
       views: {
-        'blog.post6': {
-          templateUrl: 'templates/posts/post6.html',
+        'blog.t_post6': {
+          templateUrl: 'templates/posts/t_post6.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post7', {
-      url: '/7',
+    .state('blog.t_post7', {
+      url: '/technical_7',
       views: {
-        'blog.post7': {
-          templateUrl: 'templates/posts/post7.html',
+        'blog.t_post7': {
+          templateUrl: 'templates/posts/t_post7.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post8', {
-      url: '/8',
+    .state('blog.t_post8', {
+      url: '/technical_8',
       views: {
-        'blog.post8': {
-          templateUrl: 'templates/posts/post8.html',
+        'blog.t_post8': {
+          templateUrl: 'templates/posts/t_post8.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post9', {
-      url: '/9',
+    .state('blog.t_post9', {
+      url: '/technical_9',
       views: {
-        'blog.post9': {
-          templateUrl: 'templates/posts/post9.html',
+        'blog.t_post9': {
+          templateUrl: 'templates/posts/t_post9.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post10', {
-      url: '/10',
+    .state('blog.c_post1', {
+      url: '/cultural_1',
       views: {
-        'blog.post10': {
-          templateUrl: 'templates/posts/post10.html',
+        'blog.c_post10': {
+          templateUrl: 'templates/posts/c_post1.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post11', {
-      url: '/11',
+    .state('blog.c_post2', {
+      url: '/cultural_2',
       views: {
-        'blog.post11': {
-          templateUrl: 'templates/posts/post11.html',
+        'blog.c_post2': {
+          templateUrl: 'templates/posts/c_post2.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post12', {
-      url: '/12',
+    .state('blog.c_post3', {
+      url: '/cultural_3',
       views: {
-        'blog.post12': {
-          templateUrl: 'templates/posts/post12.html',
+        'blog.c_post3': {
+          templateUrl: 'templates/posts/c_post3.html',
         }
       },
       data: {tog: 3}
     })
-    .state('blog.post13', {
-      url: '/13',
+    .state('blog.c_post4', {
+      url: '/cultural_4',
       views: {
-        'blog.post13': {
-          templateUrl: 'templates/posts/post13.html',
-        }
-      },
-      data: {tog: 3}
-    })
-    .state('blog.post14', {
-      url: '/14',
-      views: {
-        'blog.post14': {
-          templateUrl: 'templates/posts/post14.html',
-        }
-      },
-      data: {tog: 3}
-    })
-    .state('blog.post15', {
-      url: '/15',
-      views: {
-        'blog.post15': {
-          templateUrl: 'templates/posts/post15.html',
-        }
-      },
-      data: {tog: 3}
-    })
-    .state('blog.post16', {
-      url: '/16',
-      views: {
-        'blog.post16': {
-          templateUrl: 'templates/posts/post16.html',
-        }
-      },
-      data: {tog: 3}
-    })
-    .state('blog.post17', {
-      url: '/17',
-      views: {
-        'blog.post17': {
-          templateUrl: 'templates/posts/post17.html',
+        'blog.c_post4': {
+          templateUrl: 'templates/posts/c_post4.html',
         }
       },
       data: {tog: 3}
