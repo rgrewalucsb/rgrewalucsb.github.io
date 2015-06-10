@@ -40,10 +40,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
       },
       data: {tog: 3}
     })
-    .state('blog.post1', {
+    .state('blog.t_post1', {
       url: '/technical_1',
       views: {
-        'blog.post1': {
+        'blog.t_post1': {
           templateUrl: 'templates/posts/t_post1.html',
         }
       },
